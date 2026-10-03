@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Croc Sanctuary | Adopción Responsable</title>
+    <meta
+      name="description"
+      content="Santuario de cocodrilos con adopción responsable, recuperación y cuidado de fauna silvestre."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="harpoon-cursor" id="harpoonCursor" aria-hidden="true">
+      <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="harpoonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f7eabe" />
+            <stop offset="50%" stop-color="#d6a95a" />
+            <stop offset="100%" stop-color="#9d6a2b" />
+          </linearGradient>
+        </defs>
+        <g>
+          <path d="M30 40 L116 127" stroke="url(#harpoonGrad)" stroke-width="10" stroke-linecap="round" fill="none"/>
+          <path d="M46 118 L28 140 L10 123 L25 103" fill="none" stroke="url(#harpoonGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M113 108 L146 72 L136 60 L96 99 Z" fill="url(#harpoonGrad)"/>
+          <path d="M25 45 L65 27 L75 38 L44 57 Z" fill="#efd58c" opacity="0.9"/>
+          <circle cx="80" cy="24" r="8" fill="#f7eabe"/>
+        </g>
+      </svg>
+    </div>
+
+    <header class="topbar">
+      <div class="container nav-shell">
+        <a href="#inicio" class="brand" aria-label="Inicio">
+          <span class="brand-mark"></span>
+          <span class="brand-text">Croc Sanctuary</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a>
+          <a href="#mision">Misión</a>
+          <a href="#lago">Lago</a>
+          <a href="#cuidados">Cuidados</a>
+          <a href="#historias">Historias</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <a href="#adoptar" class="button button-primary">Adóptalos</a>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="hero container">
+        <div class="hero-copy">
+          <span class="eyebrow">Sanctuary & rescue</span>
+          <h1>
+            Un hogar para cocodrilos<br />
+            <span class="gradient">rescatados</span>
+          </h1>
+          <p class="lead">
+            En el santuario acompañamos a los cocodrilos que han vivido situaciones difíciles,
+            brindándoles un entorno tranquilo, una atención veterinaria responsable y una segunda
+            oportunidad digna.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#lago" class="button button-primary">Ver cocodrilos</a>
+            <a href="#mision" class="button button-ghost">Nuestra misión</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <strong>14</strong>
+              <span>Rescatados</span>
+            </div>
+            <div class="stat">
+              <strong>96%</strong>
+              <span>Salud estable</span>
+            </div>
+            <div class="stat">
+              <strong>24/7</strong>
+              <span>Monitoreo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-scene" aria-label="Río del santuario">
+          <div class="scene-card">
+            <div class="water"></div>
+            <div class="scene-badge">
+              <strong>Alma Verde</strong>
+              <span>Refugio del río</span>
+            </div>
+            <div class="croc-figure">
+              <div class="tail"></div>
+              <div class="body"></div>
+              <div class="head"></div>
+              <div class="snout"></div>
+              <div class="jaw"></div>
+              <div class="eye"></div>
+              <div class="legs"></div>
+              <div class="scales"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="mision">
+        <div class="section-heading">
+          <div>
+            <span class="kicker">Nuestra misión</span>
+            <h2>Sanar, cuidar y acompañar</h2>
+          </div>
+          <p>
+            Cada animal vive en un entorno pensado para reducir el estrés, mantener la estabilidad
+            física y ofrecerles una convivencia tranquila con su comunidad.
+          </p>
+        </div>
+
+        <div class="mission-grid">
+          <article class="mission-card">
+            <div class="icon">01</div>
+            <h3>Rescate consciente</h3>
+            <p>
+              Recuperamos ejemplares que han pasado por situaciones difíciles y evaluamos su salud
+              con atención individualizada.
+            </p>
+          </article>
+
+          <article class="mission-card">
+            <div class="icon">02</div>
+            <h3>Cuidados expertos</h3>
+            <p>
+              Alimentación adaptada, espacios térmicos adecuados y seguimiento veterinario constante.
+            </p>
+          </article>
+
+          <article class="mission-card">
+            <div class="icon">03</div>
+            <h3>Adopción responsable</h3>
+            <p>
+              Tu apoyo ayuda a sostener las recuperaciones y a mantener un santuario seguro.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="lago">
+        <div class="section-heading">
+          <div>
+            <span class="kicker">Lago de recuperación</span>
+            <h2>El santuario en movimiento</h2>
+          </div>
+          <p>
+            El hábitat está diseñado para que cada cocodrilo conviva con otros ejemplares, pero al
+            elegir a uno, su reacción refleja resistencia, tensión y la urgencia de ser cuidado.
+          </p>
+        </div>
+
+        <div class="lake-panel">
+          <div class="lake-grid" id="lake">
+            <article class="croc-card is-selected" data-name="Nilo" data-weight="58 kg" data-age="11 años" data-dimension="3.4 m" data-health="Buena" data-story="Nilo llegó con una lesión en la mandíbula y ahora se recupera con calma, observando el agua y descansando junto al grupo.">
+              <div class="mini-avatar">
+                <div class="croc-mini">
+                  <div class="tail"></div>
+                  <div class="body"></div>
+                  <div class="head"></div>
+                  <div class="snout"></div>
+                  <div class="eye"></div>
+                  <div class="leg"></div>
+                </div>
+              </div>
+              <div class="card-top">
+                <h3>Nilo</h3>
+                <span class="status">Activo</span>
+              </div>
+              <div class="meta-grid">
+                <div>
+                  <span>Peso</span>
+                  <strong>58 kg</strong>
+                </div>
+                <div>
+                  <span>Edad</span>
+                  <strong>11</strong>
+                </div>
+                <div>
+                  <span>Dim.</span>
+                  <strong>3.4 m</strong>
+                </div>
+                <div>
+                  <span>Salud</span>
+                  <strong>Buena</strong>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button type="button" class="chip">Perfil</button>
+                <button type="button" class="chip chip-accent">Adoptar</button>
+              </div>
+              <div class="pulse"></div>
+            </article>
+
+            <article class="croc-card" data-name="Atila" data-weight="64 kg" data-age="14 años" data-dimension="3.8 m" data-health="Estable" data-story="Atila es el más atento del lago. Tiene tendencia a observar, mantenerse alejado del ruido y recobrar confianza poco a poco.">
+              <div class="mini-avatar">
+                <div class="croc-mini">
+                  <div class="tail"></div>
+                  <div class="body"></div>
+                  <div class="head"></div>
+                  <div class="snout"></div>
+                  <div class="eye"></div>
+                  <div class="leg"></div>
+                </div>
+              </div>
+              <div class="card-top">
+                <h3>Atila</h3>
+                <span class="status">Observ.</span>
+              </div>
+              <div class="meta-grid">
+                <div>
+                  <span>Peso</span>
+                  <strong>64 kg</strong>
+                </div>
+                <div>
+                  <span>Edad</span>
+                  <strong>14</strong>
+                </div>
+                <div>
+                  <span>Dim.</span>
+                  <strong>3.8 m</strong>
+                </div>
+                <div>
+                  <span>Salud</span>
+                  <strong>Estable</strong>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button type="button" class="chip">Perfil</button>
+                <button type="button" class="chip chip-accent">Adoptar</button>
+              </div>
+              <div class="pulse"></div>
+            </article>
+
+            <article class="croc-card" data-name="Savia" data-weight="47 kg" data-age="9 años" data-dimension="3.1 m" data-health="Excelente" data-story="Savia llegó tras una tormenta y necesita recuperar el equilibrio. A la sombra del lago se siente protegida y en calma.">
+              <div class="mini-avatar">
+                <div class="croc-mini">
+                  <div class="tail"></div>
+                  <div class="body"></div>
+                  <div class="head"></div>
+                  <div class="snout"></div>
+                  <div class="eye"></div>
+                  <div class="leg"></div>
+                </div>
+              </div>
+              <div class="card-top">
+                <h3>Savia</h3>
+                <span class="status">Fuerte</span>
+              </div>
+              <div class="meta-grid">
+                <div>
+                  <span>Peso</span>
+                  <strong>47 kg</strong>
+                </div>
+                <div>
+                  <span>Edad</span>
+                  <strong>9</strong>
+                </div>
+                <div>
+                  <span>Dim.</span>
+                  <strong>3.1 m</strong>
+                </div>
+                <div>
+                  <span>Salud</span>
+                  <strong>Excelente</strong>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button type="button" class="chip">Perfil</button>
+                <button type="button" class="chip chip-accent">Adoptar</button>
+              </div>
+              <div class="pulse"></div>
+            </article>
+
+            <article class="croc-card" data-name="Ciro" data-weight="72 kg" data-age="18 años" data-dimension="4.2 m" data-health="Muy buena" data-story="Ciro necesita apoyo en su alimentación y vigilancia semanal. Aun así, su presencia transmite fuerza, calma y un vínculo profundo con el santuario.">
+              <div class="mini-avatar">
+                <div class="croc-mini">
+                  <div class="tail"></div>
+                  <div class="body"></div>
+                  <div class="head"></div>
+                  <div class="snout"></div>
+                  <div class="eye"></div>
+                  <div class="leg"></div>
+                </div>
+              </div>
+              <div class="card-top">
+                <h3>Ciro</h3>
+                <span class="status">Mayor</span>
+              </div>
+              <div class="meta-grid">
+                <div>
+                  <span>Peso</span>
+                  <strong>72 kg</strong>
+                </div>
+                <div>
+                  <span>Edad</span>
+                  <strong>18</strong>
+                </div>
+                <div>
+                  <span>Dim.</span>
+                  <strong>4.2 m</strong>
+                </div>
+                <div>
+                  <span>Salud</span>
+                  <strong>Muy buena</strong>
+                </div>
+              </div>
+              <div class="card-actions">
+                <button type="button" class="chip">Perfil</button>
+                <button type="button" class="chip chip-accent">Adoptar</button>
+              </div>
+              <div class="pulse"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="cuidados">
+        <div class="details-grid">
+          <article class="detail-panel detail-panel-main">
+            <div class="selected-header">
+              <div class="selected-avatar">
+                <div class="mini-shape"></div>
+              </div>
+              <div>
+                <span class="kicker compact">Cocodrilo seleccionado</span>
+                <h3 id="selectedName">Nilo</h3>
+              </div>
+            </div>
+
+            <div class="metrics">
+              <div class="metric">
+                <span>Peso</span>
+                <strong id="selectedWeight">58 kg</strong>
+              </div>
+              <div class="metric">
+                <span>Edad</span>
+                <strong id="selectedAge">11 años</strong>
+              </div>
+              <div class="metric">
+                <span>Dimensión</span>
+                <strong id="selectedDimension">3.4 m</strong>
+              </div>
+              <div class="metric">
+                <span>Salud</span>
+                <strong id="selectedHealth">Buena</strong>
+              </div>
+            </div>
+
+            <p class="detail-copy" id="selectedStory">
+              Nilo llegó con una lesión en la mandíbula y ahora se recupera con calma, observando el
+              agua y descansando junto al grupo.
+            </p>
+          </article>
+
+          <aside class="detail-panel">
+            <span class="kicker compact">Cuidados</span>
+            <ul class="care-list">
+              <li>
+                <span class="dot"></span>
+                <div>
+                  <strong>Alimentación adaptada</strong>
+                  <p>Dietas precisas según el nivel de recuperación.</p>
+                </div>
+              </li>
+              <li>
+                <span class="dot"></span>
+                <div>
+                  <strong>Temperatura estable</strong>
+                  <p>Ambientes cálidos con refugios para bajar el estrés.</p>
+                </div>
+              </li>
+              <li>
+                <span class="dot"></span>
+                <div>
+                  <strong>Monitoreo veterinario</strong>
+                  <p>Revisiones frecuentes y control de movimientos.</p>
+                </div>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section container" id="historias">
+        <div class="section-heading">
+          <div>
+            <span class="kicker">Historias del río</span>
+            <h2>Tranquilidad y comunidad</h2>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-card">
+            <div class="gallery-photo photo-one"></div>
+            <figcaption>
+              <strong>Atardecer de juncos</strong>
+              <span>Zona tranquila</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <div class="gallery-photo photo-two"></div>
+            <figcaption>
+              <strong>Rehabilitación</strong>
+              <span>Observación diaria</span>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <div class="gallery-photo photo-three"></div>
+            <figcaption>
+              <strong>Mirada del río</strong>
+              <span>Comunidad segura</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section container" id="adoptar">
+        <div class="cta-panel">
+          <div>
+            <span class="kicker">Adopción responsable</span>
+            <h2>Apoya a un cocodrilo en recuperación</h2>
+            <p>
+              Tu apoyo ayuda a sostener alimentos, tratamientos y un entorno seguro para los animales
+              del santuario.
+            </p>
+          </div>
+
+          <div class="cta-actions">
+            <a href="#lago" class="button button-primary">Elegir a un cocodrilo</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container" id="contacto">
+      <div class="footer-bar">
+        <span>Croc Sanctuary</span>
+        <span>Rescate • cuidado • comunidad</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
